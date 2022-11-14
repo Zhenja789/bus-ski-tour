@@ -1,0 +1,5 @@
+*.php
+phpmailer
+sftp-config*.json
+node_modules
+desktop.ini

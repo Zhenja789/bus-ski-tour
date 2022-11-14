@@ -1,0 +1,38 @@
+.header-menu{
+	@apply hidden lg:block;
+	ul{
+		@apply flex uppercase text-base xl:text-lg gap-7;
+		li{
+			&.active{
+				a{
+					@apply text-blue font-semibold;
+				}
+			}
+			a{
+				@apply inline-block py-8 transition-colors hover:text-blue;
+			}
+		}
+	}
+	&-wrap{
+		@apply w-full flex items-center justify-between gap-4 xl:gap-7;
+	}
+}
+
+.mobile-menu{
+	@apply pb-10 lg:hidden h-screen w-full fixed overflow-y-auto bg-white top-0 left-0 z-10 opacity-0 invisible transition-transform duration-500 translate-x-full;
+	&.active{
+		@apply opacity-100 visible translate-x-0;
+	}
+}
+
+.header-mobile-menu{
+	ul{
+		li{
+			&.active{
+				a{
+					@apply text-blue font-semibold;
+				}
+			}
+		}
+	}
+}

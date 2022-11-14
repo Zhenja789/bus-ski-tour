@@ -1,0 +1,99 @@
+<section class="py-6 sm:py-12 overflow-hidden">
+	<div class="container">
+		<h2 class="text-base md:text-2xl text-center uppercase tracking-[.16em] mb-5 md:mb-10" data-aos="fade-up">Ездим каждые субботу и воскресенье</h2>
+
+		<div class="grid md:grid-cols-2 mb-10">
+			<div class="flex items-center lg:items-start" data-aos="fade-down">
+				<img src="/img/timetable/1.png" class="max-w-full mx-auto lg:mx-0" alt="" data-aos="fade-right">
+			</div>
+			<div class="lg:pl-24 mt-8 md:mt-0" data-aos="fade-up-left">
+				<div class="bg-white rounded-md px-4 sm:px-7 pt-7 pb-4 w-fit mx-auto lg:mx-0">
+					<h3 class="text-center text-blue sm:text-2xl font-bold mb-3">Оставьте заявку на поездку</h3>
+					<form>
+						<div class="flex items-center justify-between">
+							<label class="flex items-center gap-x-2 cursor-pointer">
+								<input type="radio" class="opacity-0 invisible absolute" name="city" value="Завьялиха" checked>
+								<span class="fake-radio-btn"></span>
+								<span class="font-semibold text-base sm:text-xl">Завьялиха</span>
+							</label>
+							<label class="flex items-center gap-x-2 cursor-pointer">
+								<input type="radio" class="opacity-0 invisible absolute" name="city" value="Аджигардак">
+								<span class="fake-radio-btn"></span>
+								<span class="font-semibold text-base sm:text-xl">Аджигардак</span>
+							</label>
+						</div>
+						<div class="flex justify-center flex-wrap mt-4">
+							<p class="font-medium w-full text-center">Сколько человек</p>
+							<input type="hidden" name="count" value="1">
+							<div class="inline-flex mx-auto border border-[#CECDCD] rounded-sm overflow-hidden">
+								<button type="button" class="px-2 bg-[#ECECEC] border-r border-[#CECDCD] transition-colors hover:bg-[#BBBBBB]" id="minus">
+									<svg width="24" height="2" viewBox="0 0 24 2" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="2" rx="1" fill="#333333"/></svg>
+								</button>
+								<div class="py-1 px-8 font-semibold">1</div>
+								<button type="button" class="px-2 bg-[#ECECEC] border-l border-[#CECDCD] transition-colors hover:bg-[#BBBBBB]" id="plus">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="11" width="24" height="2" rx="1" fill="#333333"/><rect x="11" width="2" height="24" rx="1" fill="#333333"/></svg>
+								</button>
+							</div>
+						</div>
+						<label class="block mt-4">
+							<p class="font-medium mb-1">Ваше имя</p>
+							<input type="text" name="name" class="border border-blue rounded-md outline-none py-2 px-4 w-full transition-shadow focus:shadow focus:shadow-blue">
+						</label>
+						<label class="block mt-4">
+							<p class="font-medium mb-1">Телефон</p>
+							<input type="text" name="phone" class="border border-blue rounded-md outline-none py-2 px-4 w-full transition-shadow focus:shadow focus:shadow-blue">
+						</label>
+						<button type="submit" class="red-btn w-full py-3 sm:py-2 mt-6 outline-none focus:shadow focus:shadow-red active:shadow-none">Отправить</button>
+						<label class="flex items-center gap-x-2 cursor-pointer mt-3">
+							<input type="checkbox" class="opacity-0 invisible absolute" name="agree" checked>
+							<span class="fake-checkbox-btn"></span>
+							<span class="text-[14px] text-[#929292]">Согласен на <a href="#" class="hover:underline">обработку персональных данных</a> *</span>
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+			<div class="text-center" data-aos="fade-left">
+				<div class="h-[72px] flex items-end justify-center mb-1">
+					<img src="/img/timetable/icons/1.svg" class="max-h-full w-auto" alt="">
+				</div>
+				<p class="text-[14px] sm:text-base !leading-none">Лучшие горнолыжные курорты Урала</p>
+			</div>
+			<div class="text-center" data-aos="fade-left" data-aos-delay="100">
+				<div class="h-[72px] flex items-end justify-center mb-1">
+					<img src="/img/timetable/icons/2.svg" class="max-h-full w-auto" alt="">
+				</div>
+				<p class="text-[14px] sm:text-base !leading-none">Низкая стоимость билетов</p>
+			</div>
+			<div class="text-center" data-aos="fade-left" data-aos-delay="200">
+				<div class="h-[72px] flex items-end justify-center mb-1">
+					<img src="/img/timetable/icons/3.svg" class="max-h-full w-auto" alt="">
+				</div>
+				<p class="text-[14px] sm:text-base !leading-none">Безопастная система онлайн-оплаты</p>
+			</div>
+			<div class="text-center" data-aos="fade-left" data-aos-delay="300">
+				<div class="h-[72px] flex items-end justify-center mb-1">
+					<img src="/img/timetable/icons/4.svg" class="max-h-full w-auto" alt="">
+				</div>
+				<p class="text-[14px] sm:text-base !leading-none">Быстрый возврат денег в случае отказа</p>
+			</div>
+			<div class="text-center" data-aos="fade-left" data-aos-delay="400">
+				<div class="h-[72px] flex items-end justify-center mb-1">
+					<img src="/img/timetable/icons/5.svg" class="max-h-full w-auto" alt="">
+				</div>
+				<p class="text-[14px] sm:text-base !leading-none">Комфортабельные новые автобусы</p>
+			</div>
+			<div class="text-center" data-aos="fade-left" data-aos-delay="500">
+				<div class="h-[72px] flex items-end justify-center mb-1">
+					<img src="/img/timetable/icons/6.svg" class="max-h-full w-auto" alt="">
+				</div>
+				<p class="text-[14px] sm:text-base !leading-none">Организованное питание в кафе</p>
+			</div>
+		</div>
+
+		<p class="text-center text-xs sm:text-xl mt-7 sm:mt-8" data-aos="fade-up">Мы организовываем, однодневные атобусные туры из Уфы на горнолыжные комплексы<br class="hidden lg:block"> «Завьялиха» и «Аджигардак». Создаем приятные условия для всех желающих покататься<br class="hidden lg:block"> на горнолыжных склонах, делая поездки дешевыми, безопасными и комфортными!</p>
+
+	</div>
+</section>

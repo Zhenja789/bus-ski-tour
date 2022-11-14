@@ -1,0 +1,109 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.red-btn{
+	@apply bg-red text-white font-bold rounded-md text-[14px] sm:text-base lg:text-2xl transition-colors hover:bg-redDark;
+}
+
+.title-bg{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.title-bg-1{
+	background-image: url(../img/title-bgs/1.svg);
+}
+.title-bg-2{
+	background-image: url(../img/title-bgs/2.svg);
+}
+.title-bg-3{
+	background-image: url(../img/title-bgs/3.svg);
+}
+.title-bg-4{
+	background-image: url(../img/title-bgs/4.svg);
+}
+.title-bg-5{
+	background-image: url(../img/title-bgs/5.svg);
+}
+.title-bg-6{
+	background-image: url(../img/title-bgs/6.svg);
+}
+.title-bg-7{
+	background-image: url(../img/title-bgs/7.svg);
+}
+.title-bg-8{
+	background-image: url(../img/title-bgs/8.svg);
+}
+.title-bg-9{
+	background-image: url(../img/title-bgs/9.svg);
+}
+.title-bg-10{
+	background-image: url(../img/title-bgs/10.svg);
+}
+.title-bg-11{
+	background-image: url(../img/title-bgs/11.svg);
+}
+
+.swiper-pagination-bullet{
+	@apply 
+	w-6 h-6 bg-transparent border border-blue opacity-100 relative
+	before:content-['']
+	before:absolute
+	before:w-3
+	before:h-3
+	before:bg-blue
+	before:rounded-full
+	before:left-1/2
+	before:-translate-x-1/2
+	before:top-1/2
+	before:-translate-y-1/2
+	before:transition-opacity
+	before:opacity-0
+	#{!important};
+}
+.swiper-pagination-bullet-active{
+	@apply before:opacity-100 #{!important};
+}
+
+.fake-radio-btn{
+	@apply 
+	relative w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#ABABAB] transition-colors
+	before:content-['']
+	before:absolute
+	before:w-2.5 before:sm:w-3
+	before:h-2.5 before:sm:h-3
+	before:bg-blue
+	before:rounded-full
+	before:left-1/2
+	before:-translate-x-1/2
+	before:top-1/2
+	before:-translate-y-1/2
+	before:transition-opacity
+	before:opacity-0
+}
+input[type="radio"]:checked ~ .fake-radio-btn{
+	@apply border-blue before:opacity-100;
+}
+
+.fake-checkbox-btn{
+	@apply 
+	relative w-[17px] h-[17px] rounded-[3px] border border-[#929292]
+	before:content-['']
+	before:absolute
+	before:w-[11px]
+	before:h-[11px]
+	before:bg-[url('../img/icons/check.svg')]
+	before:bg-cover
+	before:bg-center
+	before:left-1/2
+	before:-translate-x-1/2
+	before:top-1/2
+	before:-translate-y-1/2
+	before:ml-[1px]
+	before:transition-opacity
+	before:opacity-0
+}
+input[type="checkbox"]:checked ~ .fake-checkbox-btn{
+	@apply before:opacity-100;
+}
